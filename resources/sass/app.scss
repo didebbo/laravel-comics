@@ -1,9 +1,4 @@
-// App
-@import "/partials/vars";
 @import "/partials/reset";
-@import "/partials/commons";
-header {
-    .top-header {
-        background-color: $main-color;
-    }
-}
+@import "/partials/variables";
+@import "/partials/common";
+@import "/section/header";
