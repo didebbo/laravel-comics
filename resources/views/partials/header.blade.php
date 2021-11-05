@@ -20,7 +20,7 @@
             <div class="logo">
                 <img src="{{ asset('/images/dc-logo.png') }}" alt="DC Logo">
             </div>
-            <ul class="row">
+            <ul class="row nav-bar">
                 <li class="col">
                     <a href="#">
                         Characters
@@ -72,6 +72,12 @@
                     </a>
                 </li>
             </ul>
+            <div class="search-bar">
+                <label for="search-bar">
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Search">
+                </label>
+                <span class="underline"></span>
+            </div>
         </nav>
     </div>
 </header>

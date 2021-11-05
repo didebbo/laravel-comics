@@ -56,8 +56,52 @@ header nav .logo img {
 }
 
 header nav ul {
+  border: 0.2em solid yellowgreen;
+  flex-grow: 1;
+  justify-content: center;
   display: flex;
   list-style: none;
+  margin: 0 2em;
+}
+
+header nav .search-bar input {
+  width: 10em;
+  padding: 0.2em;
+  border: none;
+  outline: none;
+}
+
+header nav .search-bar input::-moz-placeholder {
+  text-align: right;
+}
+
+header nav .search-bar input:-ms-input-placeholder {
+  text-align: right;
+}
+
+header nav .search-bar input::placeholder {
+  text-align: right;
+}
+
+header nav .search-bar input:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+header nav .search-bar input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+header nav .search-bar input:focus::placeholder {
+  opacity: 0;
+}
+
+header nav .search-bar .underline {
+  position: relative;
+  top: -0.1em;
+  display: block;
+  height: 0.2em;
+  border-radius: 10em;
+  background-color: #0282f9;
 }
 
 body {

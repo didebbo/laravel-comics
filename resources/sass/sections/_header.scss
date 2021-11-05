@@ -31,8 +31,36 @@ header {
             }
         }
         ul {
+            border: 0.2em solid yellowgreen;
+            flex-grow: 1;
+            justify-content: center;
             display: flex;
             list-style: none;
+            margin: 0 2em;
+        }
+        .search-bar {
+            // border-bottom: 0.2em solid $main-color;
+            input {
+                width: 10em;
+                padding: 0.2em;
+                border: none;
+                outline: none;
+                // outline: 0.2em solid red;
+                &::placeholder {
+                    text-align: right;
+                }
+                &:focus::placeholder {
+                    opacity: 0;
+                }
+            }
+            .underline {
+                position: relative;
+                top: -0.1em;
+                display: block;
+                height: 0.2em;
+                border-radius: 10em;
+                background-color: $main-color;
+            }
         }
     }
 }
