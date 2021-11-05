@@ -1,2 +1,9 @@
-//
-@import "partials/reset";
+// App
+@import "/partials/vars";
+@import "/partials/reset";
+@import "/partials/commons";
+header {
+    .top-header {
+        background-color: $main-color;
+    }
+}
