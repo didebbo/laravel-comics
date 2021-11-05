@@ -1,4 +1,6 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;
+
+700&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,14 +27,20 @@ header .top-header .container {
 header .top-header .container ul {
   list-style: none;
   display: flex;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
 header .top-header .container ul li {
-  border: 0.2em solid;
-  padding: 0 1em;
+  padding: 0.2em 1em;
 }
 
 header .top-header .container ul li a {
   color: #ffffff;
+  text-decoration: none;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
 }
 

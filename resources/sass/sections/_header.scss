@@ -7,11 +7,13 @@ header {
             ul {
                 list-style: none;
                 display: flex;
+                font-size: 0.9em;
+                font-weight: bold;
                 li {
-                    border: 0.2em solid;
-                    padding: 0 1em;
+                    padding: 0.2em 1em;
                     a {
                         color: $white-color;
+                        text-decoration: none;
                     }
                 }
             }
