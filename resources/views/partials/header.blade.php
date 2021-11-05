@@ -3,10 +3,14 @@
         <div class="container">
             <ul class="row">
                 <li class="col">
-                    DC Power VISA
+                    <a href="#">
+                        DC Power VISA
+                    </a>
                 </li>
                 <li class="col">
-                    ADDITIONAL DC SITES
+                    <a href="#">
+                        ADDITIONAL DC SITES
+                    </a>
                 </li>
             </ul>
         </div>

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 1rem;
+}
+
 .container {
   max-width: 1024px;
   margin: auto;
@@ -11,5 +15,24 @@
 
 header .top-header {
   background-color: #0282f9;
+}
+
+header .top-header .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .top-header .container ul {
+  list-style: none;
+  display: flex;
+}
+
+header .top-header .container ul li {
+  border: 0.2em solid;
+  padding: 0 1em;
+}
+
+header .top-header .container ul li a {
+  color: #ffffff;
 }
 
