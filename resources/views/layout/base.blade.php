@@ -13,6 +13,9 @@
     @include('/partials/header')
     <main>
         <!-- TODO main !-->
+        @php
+         dump($data)   
+        @endphp
     </main>
     <footer>
         <!-- TODO footer !-->
