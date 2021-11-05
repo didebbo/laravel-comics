@@ -40,6 +40,26 @@ header .top-header .container ul li a {
   text-decoration: none;
 }
 
+header nav {
+  display: flex;
+  border: 0.2em solid red;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+header nav .logo {
+  height: 5em;
+}
+
+header nav .logo img {
+  height: 100%;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
 body {
   font-family: "PT Sans Narrow", sans-serif;
 }

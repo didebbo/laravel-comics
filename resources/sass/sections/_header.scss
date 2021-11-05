@@ -19,4 +19,20 @@ header {
             }
         }
     }
+    nav {
+        display: flex;
+        border: 0.2em solid red;
+        align-items: center;
+        padding: 0.5em 0;
+        .logo {
+            height: 5em;
+            img {
+                height: 100%;
+            }
+        }
+        ul {
+            display: flex;
+            list-style: none;
+        }
+    }
 }
