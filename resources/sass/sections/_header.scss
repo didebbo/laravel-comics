@@ -6,16 +6,13 @@ header {
             display: flex;
             justify-content: flex-end;
             ul {
+                color: $white-color;
                 list-style: none;
                 display: flex;
                 font-size: 0.9em;
                 font-weight: bold;
                 li {
                     padding: 0.2em 1em;
-                    a {
-                        color: $white-color;
-                        text-decoration: none;
-                    }
                 }
             }
         }
@@ -36,6 +33,7 @@ header {
             }
         }
         ul {
+            color: $secondary-color;
             // border: 0.2em solid yellowgreen;
             flex-grow: 1;
             justify-content: flex-end;
@@ -54,8 +52,6 @@ header {
                     display: flex;
                     align-items: center;
                     // border: 0.2em solid red;
-                    color: $secondary-color;
-                    text-decoration: none;
                     i {
                         color: $primary-color;
                         font-size: 0.8em;

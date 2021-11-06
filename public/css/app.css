@@ -20,6 +20,11 @@ body {
   font-family: "PT Sans Narrow", sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -35,6 +40,7 @@ header .top-header .container {
 }
 
 header .top-header .container ul {
+  color: #ffffff;
   list-style: none;
   display: flex;
   font-size: 0.9em;
@@ -43,11 +49,6 @@ header .top-header .container ul {
 
 header .top-header .container ul li {
   padding: 0.2em 1em;
-}
-
-header .top-header .container ul li a {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 header nav {
@@ -64,6 +65,7 @@ header nav .logo img {
 }
 
 header nav ul {
+  color: #484848;
   flex-grow: 1;
   justify-content: flex-end;
   display: flex;
@@ -82,8 +84,6 @@ header nav ul li {
 header nav ul li a {
   display: flex;
   align-items: center;
-  color: #484848;
-  text-decoration: none;
 }
 
 header nav ul li a i {
@@ -172,5 +172,52 @@ header .hero.cover::before {
   bottom: 0;
   background-color: #0282f9;
   opacity: 0.4;
+}
+
+main {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+main .current-series {
+  padding: 2em 0;
+}
+
+main .current-series ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .current-series ul li {
+  padding: 1em;
+  width: 16.6666666667%;
+}
+
+main .current-series ul li .item .poster {
+  position: relative;
+  width: 100%;
+}
+
+main .current-series ul li .item .poster::before {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+}
+
+main .current-series ul li .item .poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .current-series ul li .item .title {
+  padding: 0.5em 0.2em;
 }
 

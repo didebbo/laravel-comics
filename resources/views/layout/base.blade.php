@@ -19,12 +19,7 @@
 
 <body>
     @include('/partials/header')
-    <main>
-        <!-- TODO main !-->
-        @php
-            dump($data);
-        @endphp
-    </main>
+    @include('/partials/main')
     <footer>
         <!-- TODO footer !-->
     </footer>
