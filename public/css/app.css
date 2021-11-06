@@ -25,6 +25,14 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-family: "PT Sans Narrow", sans-serif;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -179,33 +187,38 @@ main {
   color: #ffffff;
 }
 
-main .current-series {
-  padding: 2em 0;
+main .current-series .container > .title {
+  transform: translate(0, -50%);
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #0282f9;
 }
 
-main .current-series ul {
+main .current-series .container ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
-main .current-series ul li {
+main .current-series .container ul li {
   padding: 1em;
   width: 16.6666666667%;
 }
 
-main .current-series ul li .item .poster {
+main .current-series .container ul li .item .poster {
   position: relative;
   width: 100%;
 }
 
-main .current-series ul li .item .poster::before {
+main .current-series .container ul li .item .poster::before {
   display: block;
   content: "";
   padding-bottom: 100%;
 }
 
-main .current-series ul li .item .poster img {
+main .current-series .container ul li .item .poster img {
   position: absolute;
   top: 0;
   left: 0;
@@ -217,7 +230,20 @@ main .current-series ul li .item .poster img {
      object-position: top;
 }
 
-main .current-series ul li .item .title {
+main .current-series .container ul li .item .title {
   padding: 0.5em 0.2em;
+}
+
+main .current-series .container .btn-more {
+  display: flex;
+  justify-content: center;
+}
+
+main .current-series .container .btn-more button {
+  background-color: #0282f9;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5em 1em;
 }
 

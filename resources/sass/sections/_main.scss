@@ -2,38 +2,59 @@ main {
     background-color: $black-color;
     color: $white-color;
     .current-series {
-        padding: 2em 0;
-        ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            li {
-                padding: 1em;
-                width: (100% / 6);
-                .item {
-                    // border: 0.2em solid red;
-                    .poster {
-                        position: relative;
-                        // outline: 0.2em solid orange;
-                        width: 100%;
-                        &::before {
-                            display: block;
-                            content: "";
-                            padding-bottom: 100%;
-                        }
-                        img {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
+        .container {
+            >.title {
+                transform: translate(0, -50%);
+                display: inline-block;
+                padding: 0.5em 1em;
+                font-size: 1.2em;
+                text-transform: uppercase;
+                background-color: $primary-color;
+            }
+            ul {
+                // padding: 0.5em 0;
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    padding: 1em;
+                    width: (100% / 6);
+                    .item {
+                        // border: 0.2em solid red;
+                        .poster {
+                            position: relative;
+                            // outline: 0.2em solid orange;
                             width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            object-position: top;
+                            &::before {
+                                display: block;
+                                content: "";
+                                padding-bottom: 100%;
+                            }
+                            img {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: top;
+                            }
+                        }
+                        .title {
+                            padding: 0.5em 0.2em;
                         }
                     }
-                    .title {
-                        padding: 0.5em 0.2em;
-                    }
+                }
+            }
+            .btn-more {
+                display: flex;
+                justify-content: center;
+                button {
+                    background-color: $primary-color;
+                    font-size: 1.2em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    padding: 0.5em 1em;
                 }
             }
         }
