@@ -1,7 +1,7 @@
 main {
     background-color: $black-color;
     color: $white-color;
-    .current-series {
+    section.current-series {
         .container {
             >.title {
                 transform: translate(0, -50%);
@@ -47,6 +47,8 @@ main {
                 }
             }
             .btn-more {
+                margin-top: 2em;
+                margin-bottom: 4em;
                 display: flex;
                 justify-content: center;
                 button {
@@ -54,7 +56,39 @@ main {
                     font-size: 1.2em;
                     text-transform: uppercase;
                     font-weight: bold;
-                    padding: 0.5em 1em;
+                    padding: 0.5em 4em;
+                }
+            }
+        }
+    }
+    section.info {
+        background-color: $primary-color;
+        padding: 1em 0;
+        .container {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                // border: 0.2em solid red;
+                li {
+                    // border: 0.2em solid orange;
+                    padding: 1em 2em;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        // border: 0.2em solid green;
+                        .icon {
+                            // border: 0.2em solid brown;
+                            height: 4em;
+                            img {
+                                height: 100%;
+                            }
+                        }
+                        .text {
+                            margin-left: 1em;
+                        }
+                    }
                 }
             }
         }

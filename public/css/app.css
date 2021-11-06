@@ -187,7 +187,7 @@ main {
   color: #ffffff;
 }
 
-main .current-series .container > .title {
+main section.current-series .container > .title {
   transform: translate(0, -50%);
   display: inline-block;
   padding: 0.5em 1em;
@@ -196,29 +196,29 @@ main .current-series .container > .title {
   background-color: #0282f9;
 }
 
-main .current-series .container ul {
+main section.current-series .container ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
-main .current-series .container ul li {
+main section.current-series .container ul li {
   padding: 1em;
   width: 16.6666666667%;
 }
 
-main .current-series .container ul li .item .poster {
+main section.current-series .container ul li .item .poster {
   position: relative;
   width: 100%;
 }
 
-main .current-series .container ul li .item .poster::before {
+main section.current-series .container ul li .item .poster::before {
   display: block;
   content: "";
   padding-bottom: 100%;
 }
 
-main .current-series .container ul li .item .poster img {
+main section.current-series .container ul li .item .poster img {
   position: absolute;
   top: 0;
   left: 0;
@@ -230,20 +230,55 @@ main .current-series .container ul li .item .poster img {
      object-position: top;
 }
 
-main .current-series .container ul li .item .title {
+main section.current-series .container ul li .item .title {
   padding: 0.5em 0.2em;
 }
 
-main .current-series .container .btn-more {
+main section.current-series .container .btn-more {
+  margin-top: 2em;
+  margin-bottom: 4em;
   display: flex;
   justify-content: center;
 }
 
-main .current-series .container .btn-more button {
+main section.current-series .container .btn-more button {
   background-color: #0282f9;
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 0.5em 1em;
+  padding: 0.5em 4em;
+}
+
+main section.info {
+  background-color: #0282f9;
+  padding: 1em 0;
+}
+
+main section.info .container ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main section.info .container ul li {
+  padding: 1em 2em;
+}
+
+main section.info .container ul li a {
+  display: flex;
+  align-items: center;
+}
+
+main section.info .container ul li a .icon {
+  height: 4em;
+}
+
+main section.info .container ul li a .icon img {
+  height: 100%;
+}
+
+main section.info .container ul li a .text {
+  margin-left: 1em;
 }
 

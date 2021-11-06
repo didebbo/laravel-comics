@@ -33,4 +33,24 @@
             </div>
         </div>
     </section>
+    <section class="info">
+        <div class="container">
+            <ul class="row">
+                @for ($i = 0; $i < 5; $i++)
+                    <li class="col">
+                        <a href="#">
+                            <div class="icon">
+                                <img src="/images/buy-comics-digital-comics.png" alt="#">
+                            </div>
+                            <div class="text">
+                                <h4>
+                                    Lorem Ipsum
+                                </h4>
+                            </div>
+                        </a>
+                    </li>
+                @endfor
+            </ul>
+        </div>
+    </section>
 </main>
