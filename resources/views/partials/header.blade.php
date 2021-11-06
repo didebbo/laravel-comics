@@ -1,3 +1,61 @@
+@php
+$ul = [
+    'active' => 1,
+    'li' => [
+        [
+            'label' => 'Characters',
+            'uri' => '#',
+            'dropdown' => false,
+        ],
+        [
+            'label' => 'Comics',
+            'uri' => '#',
+            'dropdown' => false,
+        ],
+        [
+            'label' => 'Movie',
+            'uri' => '#',
+            'dropdown' => false,
+        ],
+        [
+            'label' => 'TV',
+            'uri' => '#',
+            'dropdown' => false,
+        ],
+        [
+            'label' => 'Games',
+            'uri' => '#',
+            'dropdown' => false,
+        ],
+        [
+            'label' => 'Collectibles',
+            'uri' => '#',
+            'dropdown' => false,
+        ],
+        [
+            'label' => 'Videos',
+            'uri' => '#',
+            'dropdown' => false,
+        ],
+        [
+            'label' => 'Fans',
+            'uri' => '#',
+            'dropdown' => false,
+        ],
+        [
+            'label' => 'News',
+            'uri' => '#',
+            'dropdown' => false,
+        ],
+        [
+            'label' => 'Shop',
+            'uri' => '#',
+            'dropdown' => true,
+        ],
+    ],
+];
+@endphp
+
 <header>
     <div class="top-header">
         <div class="container">
@@ -18,65 +76,31 @@
     <div class="container">
         <nav>
             <div class="logo">
-                <img src="{{ asset('/images/dc-logo.png') }}" alt="DC Logo">
+                <a href="#">
+                    <img src="{{ asset('/images/dc-logo.png') }}" alt="DC Logo">
+                </a>
             </div>
             <ul class="row nav-bar">
-                <li class="col">
-                    <a href="#">
-                        Characters
-                    </a>
-                </li>
-                <li class="col active">
-                    <a href="#">
-                        Comics
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="#">
-                        Movies
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="#">
-                        TV
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="#">
-                        Games
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="#">
-                        Collectibles
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="#">
-                        Videos
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="#">
-                        Fans
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="#">
-                        News
-                    </a>
-                </li>
-                <li class="col">
-                    <a href="#" class="dropdown">
-                        Shop
-                    </a>
-                </li>
+                @foreach ($ul['li'] as $key => $li)
+                    <li class="col @php if ($key === $ul['active']) echo " active" @endphp">
+                        <a href="{{ $li['uri'] }}">
+                            {{ $li['label'] }}
+                            @php
+                                if ($li['dropdown']) {
+                                    echo '<i class="fas fa-caret-down"></i>';
+                                }
+                            @endphp
+                        </a>
+                    </li>
+                @endforeach
             </ul>
             <div class="search-bar">
                 <label for="search-bar">
                     <input type="text" name="search-bar" id="search-bar" placeholder="Search">
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
                 </label>
-                <span class="underline"></span>
             </div>
         </nav>
     </div>

@@ -1,6 +1,6 @@
 header {
     .top-header {
-        background-color: $main-color;
+        background-color: $primary-color;
         .container {
             display: flex;
             justify-content: flex-end;
@@ -21,45 +21,83 @@ header {
     }
     nav {
         display: flex;
-        border: 0.2em solid red;
-        align-items: center;
-        padding: 0.5em 0;
+        // border: 0.2em solid green;
+        // border: 0.2em solid red;
+        // margin: 1em 0;
         .logo {
-            height: 5em;
+            // border: 0.2em solid red;
+            height: 3.5em;
+            margin: 1em 0;
             img {
+                // width: 100%;
                 height: 100%;
             }
         }
         ul {
-            border: 0.2em solid yellowgreen;
+            // border: 0.2em solid yellowgreen;
             flex-grow: 1;
-            justify-content: center;
+            justify-content: flex-end;
             display: flex;
             list-style: none;
-            margin: 0 2em;
-        }
-        .search-bar {
-            // border-bottom: 0.2em solid $main-color;
-            input {
-                width: 10em;
-                padding: 0.2em;
-                border: none;
-                outline: none;
-                // outline: 0.2em solid red;
-                &::placeholder {
-                    text-align: right;
+            // padding-left: 1em;
+            padding-right: 4em;
+            li {
+                display: flex;
+                // border: 0.2em solid;
+                padding: 0 1em;
+                font-weight: bold;
+                text-transform: uppercase;
+                align-items: center;
+                a {
+                    display: flex;
+                    align-items: center;
+                    // border: 0.2em solid red;
+                    color: $secondary-color;
+                    text-decoration: none;
+                    i {
+                        color: $primary-color;
+                        font-size: 0.8em;
+                        margin-left: 0.8em;
+                    }
                 }
-                &:focus::placeholder {
-                    opacity: 0;
+                &.active {
+                    border-bottom: 0.2em solid $primary-color;
                 }
             }
-            .underline {
-                position: relative;
-                top: -0.1em;
-                display: block;
-                height: 0.2em;
-                border-radius: 10em;
-                background-color: $main-color;
+        }
+        .search-bar {
+            // border: 0.2em solid;
+            display: flex;
+            align-items: center;
+            // width: 10em;
+            label {
+                border-bottom: 0.2em solid $primary-color;
+                display: flex;
+                align-items: center;
+                input {
+                    width: 100%;
+                    padding: 0.2em;
+                    padding-right: 0.4em;
+                    border: none;
+                    outline: none;
+                    // outline: 0.2em solid red;
+                    font-size: 1em;
+                    font-family: 'PT Sans Narrow', sans-serif;
+                    &::placeholder {
+                        text-align: right;
+                        font-weight: bold;
+                        opacity: 1;
+                    }
+                    &:focus::placeholder {
+                        opacity: 0;
+                    }
+                }
+                button {
+                    font-size: 1em;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
             }
         }
     }
