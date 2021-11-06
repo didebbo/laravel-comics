@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 body {
   font-size: 1rem;
   font-family: "PT Sans Narrow", sans-serif;
@@ -141,5 +152,25 @@ header nav .search-bar label button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+header .hero {
+  position: relative;
+  height: 20em;
+  background-image: url("/images/jumbotron.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+header .hero.cover::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0282f9;
+  opacity: 0.4;
 }
 

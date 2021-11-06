@@ -1,4 +1,5 @@
 header {
+    // TOP HEADER
     .top-header {
         background-color: $primary-color;
         .container {
@@ -19,6 +20,7 @@ header {
             }
         }
     }
+    // NAVBAR
     nav {
         display: flex;
         // border: 0.2em solid green;
@@ -99,6 +101,26 @@ header {
                     cursor: pointer;
                 }
             }
+        }
+    }
+    // HERO
+    .hero {
+        position: relative;
+        // border: 0.2em solid red;
+        height: 20em;
+        background-image: url("/images/jumbotron.jpg");
+        background-size: cover;
+        background-position: top;
+        &.cover::before {
+            position: absolute;
+            display: block;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $primary-color;
+            opacity: 0.4;
         }
     }
 }

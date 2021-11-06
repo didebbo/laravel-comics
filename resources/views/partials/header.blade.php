@@ -104,4 +104,7 @@ $ul = [
             </div>
         </nav>
     </div>
+    <div class="hero">
+        <div class="hero cover"></div>
+    </div>
 </header>
