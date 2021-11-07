@@ -21,7 +21,7 @@ footer {
                         list-style: none;
                         display: flex;
                         flex-wrap: wrap;
-                        // align-items: flex-start;
+                        align-items: flex-start;
                         >li {
                             // border: 0.2em solid red;
                             width: (100% / 3);
@@ -36,11 +36,23 @@ footer {
                                     list-style: none;
                                     >li {
                                         a {
-                                            opacity: 0.5;
+                                            // opacity: 0.5;
+                                            color: rgba($color: #fff, $alpha: 0.5);
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
                                         }
                                     }
                                 }
                             }
+                        }
+                    }
+                    .copyright {
+                        // border: 0.2em solid red;
+                        padding: 1em;
+                        color: rgba($color: #fff, $alpha: 0.5);
+                        a {
+                            color: $primary-color;
                         }
                     }
                 }

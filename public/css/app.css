@@ -329,6 +329,19 @@ footer .top-footer .container > ul > li > ul > li .menu > ul {
 }
 
 footer .top-footer .container > ul > li > ul > li .menu > ul > li a {
-  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer .top-footer .container > ul > li > ul > li .menu > ul > li a:hover {
+  text-decoration: underline;
+}
+
+footer .top-footer .container > ul > li .copyright {
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer .top-footer .container > ul > li .copyright a {
+  color: #0282f9;
 }
 

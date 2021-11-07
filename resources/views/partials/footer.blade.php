@@ -77,7 +77,7 @@ $navs = [
                 'uri' => '#',
             ],
             [
-                'label' => 'COntact Us',
+                'label' => 'Contact Us',
                 'uri' => '#',
             ],
         ],
@@ -111,31 +111,11 @@ $navs = [
         'title' => 'Shop',
         'menu' => [
             [
-                'label' => 'Characters',
+                'label' => 'Shop DC',
                 'uri' => '#',
             ],
             [
-                'label' => 'Comics',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Movies',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Tv',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Games',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Videos',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'News',
+                'label' => 'Shop DC COllectible',
                 'uri' => '#',
             ],
         ],
@@ -170,6 +150,11 @@ $navs = [
                             </li>
                         @endforeach
                     </ul>
+                    <div class="copyright">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus <a href="#">
+                            repudiandae voluptate
+                        </a> animi eius.
+                    </div>
                 </li>
                 <li class="col dc-logo">
 
