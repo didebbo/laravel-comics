@@ -73,7 +73,7 @@ header nav .logo img {
 }
 
 header nav ul {
-  color: #484848;
+  color: #303030;
   flex-grow: 1;
   justify-content: flex-end;
   display: flex;
@@ -343,5 +343,75 @@ footer .top-footer .container > ul > li .copyright {
 
 footer .top-footer .container > ul > li .copyright a {
   color: #0282f9;
+}
+
+footer .bottom-footer {
+  background-color: #303030;
+  color: #ffffff;
+}
+
+footer .bottom-footer .container > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+footer .bottom-footer .container > ul > li {
+  padding: 0 1em;
+}
+
+footer .bottom-footer .container > ul > li .sign-up {
+  display: inline-block;
+  border: 0.2em solid #0282f9;
+  padding: 0.2em 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer .bottom-footer .container > ul > li > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+footer .bottom-footer .container > ul > li > ul > li {
+  padding: 0 0.4em;
+}
+
+footer .bottom-footer .container > ul > li > ul > li h2 {
+  color: #0282f9;
+  text-transform: uppercase;
+  margin-right: 0.5em;
+}
+
+footer .bottom-footer .container > ul > li > ul > li a {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 2.1em;
+  border-radius: 10em;
+  transition: 0.2s;
+}
+
+footer .bottom-footer .container > ul > li > ul > li a::before {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+}
+
+footer .bottom-footer .container > ul > li > ul > li a:hover {
+  background-color: #ffffff;
+}
+
+footer .bottom-footer .container > ul > li > ul > li a i {
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #303030;
 }
 

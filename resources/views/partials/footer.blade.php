@@ -156,8 +156,51 @@ $navs = [
                         </a> animi eius.
                     </div>
                 </li>
-                <li class="col dc-logo">
-
+                <li class="col dc-logo"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <ul class="row">
+                <li class="col">
+                    <a href="" class="sign-up">
+                        Sign-Up Now!
+                    </a>
+                </li>
+                <li class="col">
+                    <ul class="row">
+                        <li class="col">
+                            <h2>
+                                Follow Us
+                            </h2>
+                        </li>
+                        <li class="col">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a href="#">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a href="#">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>

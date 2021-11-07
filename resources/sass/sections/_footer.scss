@@ -59,4 +59,67 @@ footer {
             }
         }
     }
+    .bottom-footer {
+        background-color: $secondary-color;
+        color: $white-color;
+        .container {
+            >ul {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                justify-content: space-between;
+                padding-top: 2em;
+                padding-bottom: 1em;
+                >li {
+                    padding: 0 1em;
+                    // border: 0.2em solid red;
+                    .sign-up {
+                        display: inline-block;
+                        border: 0.2em solid $primary-color;
+                        padding: 0.2em 1em;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                    >ul {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        >li {
+                            padding: 0 0.4em;
+                            h2 {
+                                color: $primary-color;
+                                text-transform: uppercase;
+                                margin-right: 0.5em;
+                            }
+                            a {
+                                position: relative;
+                                display: inline-block;
+                                // border: 0.2em solid red;
+                                background-color: rgba($color: #fff, $alpha: 0.2);
+                                width: 2.1em;
+                                border-radius: 10em;
+                                transition: 0.2s;
+                                &::before {
+                                    display: block;
+                                    content: "";
+                                    padding-bottom: 100%;
+                                }
+                                &:hover {
+                                    background-color: $white-color;
+                                }
+                                i {
+                                    font-size: 1.2em;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    color: $secondary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
