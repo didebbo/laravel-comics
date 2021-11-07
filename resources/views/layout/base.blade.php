@@ -20,9 +20,8 @@
 <body>
     @include('/partials/header')
     @include('/partials/main')
-    <footer>
-        <!-- TODO footer !-->
-    </footer>
+    @include('/partials/footer')
+
 </body>
 
 </html>

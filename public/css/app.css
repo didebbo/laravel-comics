@@ -280,5 +280,55 @@ main section.info .container ul li a .icon img {
 
 main section.info .container ul li a .text {
   margin-left: 1em;
+  text-transform: uppercase;
+}
+
+footer .top-footer {
+  background-image: url("/images/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+footer .top-footer .container > ul {
+  list-style: none;
+  color: #ffffff;
+  display: flex;
+}
+
+footer .top-footer .container > ul > li {
+  width: 50%;
+}
+
+footer .top-footer .container > ul > li.dc-logo {
+  margin-left: auto;
+  background-image: url("/images/dc-logo-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+footer .top-footer .container > ul > li > ul {
+  padding: 1em 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+footer .top-footer .container > ul > li > ul > li {
+  width: 33.3333333333%;
+  padding: 0 1em;
+}
+
+footer .top-footer .container > ul > li > ul > li .menu .title {
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+
+footer .top-footer .container > ul > li > ul > li .menu > ul {
+  list-style: none;
+}
+
+footer .top-footer .container > ul > li > ul > li .menu > ul > li a {
+  opacity: 0.5;
 }
 
