@@ -1,135 +1,10 @@
-@php
-$navs = [
-    [
-        'title' => 'DC Comics',
-        'menu' => [
-            [
-                'label' => 'Characters',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Comics',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Movies',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Tv',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Games',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Videos',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'News',
-                'uri' => '#',
-            ],
-        ],
-    ],
-    [
-        'title' => 'DC',
-        'menu' => [
-            [
-                'label' => 'Terms Of Use',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Privacy Policy (New)',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Ad Choices',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Advertising',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Jobs',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Subscriptions',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Talent Workshop',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'CPSC Certificates',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Ratings',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Shop Help',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Contact Us',
-                'uri' => '#',
-            ],
-        ],
-    ],
-    [
-        'title' => 'Sites',
-        'menu' => [
-            [
-                'label' => 'DC',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'MAD Magazine',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'DC Kids',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'DC Universe',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'DC Power Visa',
-                'uri' => '#',
-            ],
-        ],
-    ],
-    [
-        'title' => 'Shop',
-        'menu' => [
-            [
-                'label' => 'Shop DC',
-                'uri' => '#',
-            ],
-            [
-                'label' => 'Shop DC COllectible',
-                'uri' => '#',
-            ],
-        ],
-    ],
-];
-@endphp
-
 <footer>
     <div class="top-footer">
         <div class="container">
             <ul class="row">
                 <li class="col">
                     <ul class="row">
-                        @foreach ($navs as $nav)
+                        @foreach ($data['footer-menus'] as $nav)
                             <li class="col">
                                 <div class="menu">
                                     <div class="title">
@@ -164,7 +39,7 @@ $navs = [
         <div class="container">
             <ul class="row">
                 <li class="col">
-                    <a href="" class="sign-up">
+                    <a href="#" class="sign-up">
                         Sign-Up Now!
                     </a>
                 </li>
@@ -175,31 +50,13 @@ $navs = [
                                 Follow Us
                             </h2>
                         </li>
-                        <li class="col">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="col">
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="col">
-                            <a href="#">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                        <li class="col">
-                            <a href="#">
-                                <i class="fab fa-pinterest"></i>
-                            </a>
-                        </li>
-                        <li class="col">
-                            <a href="#">
-                                <i class="fab fa-pinterest"></i>
-                            </a>
-                        </li>
+                        @foreach ($data['socials'] as $social)
+                            <li class="col">
+                                <a href="{{ $social['url'] }}">
+                                    <i class="{{ $social['icon'] }}"></i>
+                                </a>
+                            </li>
+                        @endforeach
                     </ul>
                 </li>
             </ul>

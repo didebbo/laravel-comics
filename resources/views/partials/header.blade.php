@@ -1,61 +1,3 @@
-@php
-$ul = [
-    'active' => 1,
-    'li' => [
-        [
-            'label' => 'Characters',
-            'uri' => '#',
-            'dropdown' => false,
-        ],
-        [
-            'label' => 'Comics',
-            'uri' => '#',
-            'dropdown' => false,
-        ],
-        [
-            'label' => 'Movie',
-            'uri' => '#',
-            'dropdown' => false,
-        ],
-        [
-            'label' => 'TV',
-            'uri' => '#',
-            'dropdown' => false,
-        ],
-        [
-            'label' => 'Games',
-            'uri' => '#',
-            'dropdown' => false,
-        ],
-        [
-            'label' => 'Collectibles',
-            'uri' => '#',
-            'dropdown' => false,
-        ],
-        [
-            'label' => 'Videos',
-            'uri' => '#',
-            'dropdown' => false,
-        ],
-        [
-            'label' => 'Fans',
-            'uri' => '#',
-            'dropdown' => false,
-        ],
-        [
-            'label' => 'News',
-            'uri' => '#',
-            'dropdown' => false,
-        ],
-        [
-            'label' => 'Shop',
-            'uri' => '#',
-            'dropdown' => true,
-        ],
-    ],
-];
-@endphp
-
 <header>
     <div class="top-header">
         <div class="container">
@@ -81,8 +23,11 @@ $ul = [
                 </a>
             </div>
             <ul class="row nav-bar">
-                @foreach ($ul['li'] as $key => $li)
-                    <li class="col @php if ($key === $ul['active']) echo " active" @endphp">
+                @php
+                    // dd($data);
+                @endphp
+                @foreach ($data['main-menu']['li'] as $key => $li)
+                    <li class="col @php if ($key === $data['main-menu']['active']) echo " active" @endphp">
                         <a href="{{ $li['uri'] }}">
                             {{ $li['label'] }}
                             @php
