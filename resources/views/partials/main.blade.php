@@ -1,3 +1,28 @@
+@php
+$icons = [
+    [
+        'uri' => '#',
+        'img' => 'buy-comics-digital-comics.png',
+        'label' => 'Digital Comics',
+    ],
+    [
+        'uri' => '#',
+        'img' => 'buy-comics-merchandise.png',
+        'label' => 'DC Merchandise',
+    ],
+    [
+        'uri' => '#',
+        'img' => 'buy-comics-subscriptions.png',
+        'label' => 'Subscriptions',
+    ],
+    [
+        'uri' => '#',
+        'img' => 'buy-comics-shop-locator.png',
+        'label' => 'Comic Shop Locator',
+    ],
+];
+@endphp
+
 <main>
     <section class="current-series">
         <div class="container">
@@ -36,20 +61,20 @@
     <section class="info">
         <div class="container">
             <ul class="row">
-                @for ($i = 0; $i < 5; $i++)
+                @foreach ($icons as $icon)
                     <li class="col">
-                        <a href="#">
+                        <a href="{{ $icon['uri'] }}">
                             <div class="icon">
-                                <img src="/images/buy-comics-digital-comics.png" alt="#">
+                                <img src="{{ '/images/' . $icon['img'] }}" alt="{{ $icon['img'] }}">
                             </div>
                             <div class="text">
                                 <h4>
-                                    Lorem Ipsum
+                                    {{ $icon['label'] }}
                                 </h4>
                             </div>
                         </a>
                     </li>
-                @endfor
+                @endforeach
             </ul>
         </div>
     </section>
