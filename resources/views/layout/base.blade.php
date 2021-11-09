@@ -19,7 +19,7 @@
 
 <body>
     @include('/partials/header')
-    @include('/partials/main')
+    @yield('main')
     @include('/partials/footer')
 
 </body>
